@@ -1,0 +1,10 @@
+.file-button{
+    top: 10px;
+    left:15px;
+}
+.chart{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}

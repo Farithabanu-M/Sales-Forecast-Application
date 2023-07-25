@@ -1,0 +1,14 @@
+<button class="file-button" type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+<input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file">
+<br>
+<br>
+<button mat-raised-button (click)="print()" style="left: 5px;">Fetch</button>
+<button mat-raised-button (click)="display()" style="left: 15px;">Actual</button>
+<button mat-raised-button (click)="display1()" style="left: 25px;">predicted</button>
+<div *ngIf="showchart" class="chart">
+  <canvas id="mychart"></canvas>
+</div>
+<div *ngIf="showpredicted" class="chart">
+  <canvas id="mychart1"></canvas>
+
+</div>
